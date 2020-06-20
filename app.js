@@ -1,10 +1,22 @@
 const path = require('path');
+//in built module of node.js which is used to deal with file and direectories name
+//https://www.digitalocean.com/community/tutorials/nodejs-intro-to-path-module
+
 const express = require('express');
 const morgan = require('morgan');
+//logger middleware
+
 const rateLimit = require('express-rate-limit');
+//an npm middleware which is used to limit the no of requests being processed and received by an Api endpoint.
+
 const helmet = require('helmet');
+//helmet is a npm middleware which is used to set some security headers on response
+
 const mongoSanitize = require('express-mongo-sanitize');
+//used to deal with query injection attacks
+
 const xss = require('xss-clean');
+//used to sanitizze user input from post body, get queries and urls
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
