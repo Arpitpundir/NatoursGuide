@@ -1,3 +1,5 @@
+//The difference between these two, is that devDependencies are modules which are only required during development, while dependencies are modules which are also required at runtime.
+//To save a dependency as a devDependency on installation we need to do an npm install --save-dev 
 {
   "name": "natours",
   "version": "1.0.0",
