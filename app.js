@@ -19,7 +19,9 @@ const xss = require('xss-clean');
 //used to sanitizze user input from post body, get queries and urls
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
+//The cookie parser parses cookies and puts the cookie information on req object in the middleware.
 const bodyParser = require('body-parser');
+//body-parser extract the entire body portion of an incoming request stream and exposes it on req.body.
 const compression = require('compression');
 const cors = require('cors');
 
